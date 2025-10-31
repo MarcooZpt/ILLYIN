@@ -6,8 +6,8 @@
 }
 
 body {
-  background-color: #f2faff;
-  color: #1f2a44;
+  background-color: #f3faff;
+  color: #162238;
   font: 1em sans-serif;
 }
 
@@ -138,36 +138,12 @@ body {
   opacity: 0.9;
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
-  .navbar {
-    padding: 0 20px;
-  }
-
-  .features {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .hero-title {
-    font-size: 32px;
-  }
-}
-/* Base */
-body {
-  background-color: #f3faff;
-  margin: 0;
-  padding: 0;
-  color: #162238;
-}
-
-/* Section wrapper */
+/* ===== MANAGE SECTION ===== */
 .manage-section {
   text-align: center;
   padding: 50px 20px;
 }
 
-/* Navbar Desktop */
 .button-group {
   display: flex;
   justify-content: center;
@@ -206,7 +182,6 @@ body {
   box-shadow: 0 3px 10px rgba(0,0,0,0.05);
 }
 
-/* Mobile navbar */
 .mobile-nav {
   display: none;
   justify-content: space-between;
@@ -237,7 +212,6 @@ body {
   background: #eaf6ff;
 }
 
-/* Content */
 .content-container {
   display: flex;
   flex-wrap: wrap;
@@ -248,7 +222,7 @@ body {
 
 .image-box img {
   width: 100%;
-  max-width: 400px;
+  max-width: 450px;
 }
 
 .text-box {
@@ -269,7 +243,7 @@ body {
   line-height: 1.5;
 }
 
-/* Responsive */
+/* ===== RESPONSIVE ===== */
 @media (max-width: 991px) {
   .button-group {
     display: none;
@@ -282,60 +256,9 @@ body {
   .text-box {
     text-align: center;
   }
-   .button-group {
-    display: none; /* Sembunyiin navbar desktop */
-  }
-
-  .mobile-nav {
-    display: flex; /* Tampilkan navbar HP */
-  }
-
-  .text-box {
-    text-align: center;
-  }
-}
-.content-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
 }
 
-.image-box img {
-  width: 100%;
-  max-width: 450px; /* Biar nggak kegedean di PC */
-}
-
-.text-box {
-  max-width: 500px;
-  width: 100%;
-}
-.browser-img {
-  display: block;
-  margin: 0 auto; /* Tengah horizontal */
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-/* Di mobile (sudah pas, tetap dipertahankan) */
-@media (max-width: 768px) {
-  .browser-img {
-    width: 90%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-}
-
-/* Di PC (rapihin posisinya biar ga nutup elemen di atas) */
-@media (min-width: 769px) {
-  .browser-img {
-    position: relative;
-    top: 0;              /* reset posisi vertikal */
-    transform: none;     /* hapus translateY */
-    margin-top: 40px;    /* kasih jarak biar turun dikit */
-  }
-}
+/* ===== GRID ===== */
 .section {
   text-align: center;
   width: 100%;
@@ -348,23 +271,21 @@ body {
   color: #0d1a3d;
 }
 
-.subtitle-title{
+.subtitle-title {
   margin-top: 6px;
   font-size: 16px;
   color: #7d8597;
 }
 
-/* --- GRID --- */
 .grid {
   margin: 60px auto 0;
-  max-width: 1150px;       /* supaya pas seperti gambar */
+  max-width: 1150px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 22px;               /* jarak antar card (rapi & konsisten) */
+  gap: 22px;
   justify-items: center;
 }
 
-/* --- CARD --- */
 .card {
   width: 250px;
   height: 140px;
@@ -394,15 +315,15 @@ body {
   font-weight: 600;
   color: #0d1a3d;
 }
-/* ✅ RESPONSIVE FOR MOBILE */
+
 @media (max-width: 768px) {
   .grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 kolom pada mobile */
-    gap: 14px; /* jarak antar item tetap rapi */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
   }
 
   .card {
-    width: 100%;          /* biar mengikuti ukuran kolom */
+    width: 100%;
     height: 130px;
   }
 
@@ -410,15 +331,13 @@ body {
     width: 48px;
   }
 }
-/* Default: PC menampilkan nav-right */
+
+/* ===== MOBILE MENU ===== */
 .menu-toggle {
   display: none;
 }
 
-/* MOBILE */
 @media (max-width: 768px) {
-
-  /* tampilkan tombol menu */
   .menu-toggle {
     display: block;
     background: #0d1a3d;
@@ -430,17 +349,15 @@ body {
     cursor: pointer;
   }
 
-  /* sembunyikan nav-right di mobile */
   .nav-right {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px;      /* sesuaikan dengan tinggi navbar */
+    top: 60px;
     right: 16px;
     gap: 6px;
   }
 
-  /* tombol login & create dalam bentuk kecil */
   .nav-right a {
     padding: 6px 10px;
     border-radius: 6px;
@@ -460,21 +377,20 @@ body {
     color: white;
   }
 
-  /* class active muncul saat tombol di klik */
   .nav-right.active {
     display: flex;
   }
 }
-/* Section Wrapper */
+
+/* ===== MARKETPLACE ===== */
 .marketplace-section {
-  background: #e8f6f2; /* warna latar soft seperti gambar */
+  background: #e8f6f2;
   padding: 80px 0;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-/* Layout container */
 .marketplace-container {
   width: 90%;
   max-width: 1300px;
@@ -484,7 +400,6 @@ body {
   gap: 60px;
 }
 
-/* Text part */
 .marketplace-text {
   flex: 1;
   max-width: 480px;
@@ -512,7 +427,6 @@ body {
   margin-bottom: 24px;
 }
 
-/* Benefit bullet points */
 .benefit-list {
   list-style: none;
   padding: 0;
@@ -526,7 +440,6 @@ body {
   padding-left: 28px;
 }
 
-/* Custom bullet icon */
 .benefit-list li::before {
   content: "✔";
   color: #3DA9DB;
@@ -535,7 +448,6 @@ body {
   top: 0;
 }
 
-/* Image part */
 .marketplace-image {
   flex: 1.2;
 }
@@ -546,7 +458,6 @@ body {
   box-shadow: 0px 10px 26px rgba(0,0,0,0.05);
 }
 
-/* Responsive: Mobile */
 @media (max-width: 900px) {
   .marketplace-container {
     flex-direction: column;
@@ -561,9 +472,10 @@ body {
     max-width: 100%;
   }
 }
-/* ===== OPTIONAL PAID FEATURES ===== */
+
+/* ===== OPTIONAL FEATURES ===== */
 .optional-section {
-  background-color: #ffffff; /* background putih HANYA untuk section ini */
+  background-color: #ffffff;
   padding: 100px 20px;
 }
 
@@ -571,7 +483,6 @@ body {
   max-width: 1100px;
   margin: 0 auto;
   text-align: center;
-  font-family: 'Outfit', sans-serif;
 }
 
 .optional-inner h2 {
@@ -637,7 +548,6 @@ body {
   color: #7c8c9a;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .optional-inner h2 {
     font-size: 1.7rem;
@@ -649,16 +559,15 @@ body {
     text-align: center;
   }
 
-  .optional-card h3 {
-    text-align: center;
-  }
-
+  .optional-card h3,
   .optional-card .desc,
   .optional-card .price,
   .optional-card .note {
     text-align: center;
   }
 }
+
+/* ===== FAQ ===== */
 .faq-section {
   text-align: center;
   padding: 100px 20px;
@@ -729,11 +638,11 @@ body {
 .faq-item.active .faq-icon {
   transform: rotate(45deg);
 }
-/* === Section Biru === */
+
+/* ===== BUSINESS SECTION ===== */
 .business-section {
   background-color: #f5fbff;
   padding: 0;
-  font-family: "Inter", sans-serif;
   color: #0d0d0d;
   text-align: center;
 }
@@ -748,7 +657,7 @@ body {
   align-items: center;
   padding: 80px;
   position: relative;
-  overflow: hidden; /* penting: biar batas bawah pas */
+  overflow: hidden;
 }
 
 .business-text {
@@ -764,21 +673,6 @@ body {
   margin-bottom: 30px;
 }
 
-.btn-get-started {
-  background-color: #0e1d32;
-  color: white;
-  font-weight: 600;
-  border: none;
-  border-radius: 8px;
-  padding: 12px 30px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.btn-get-started:hover {
-  opacity: 0.8;
-}
-
 .business-image {
   flex: 1;
   display: flex;
@@ -786,15 +680,14 @@ body {
   align-items: flex-end;
 }
 
-/* 🧭 HP pas banget di bawah card biru */
 .business-image img {
   width: 430px;
   position: absolute;
-  bottom: 0; /* ini yang bikin pas */
+  bottom: 0;
   right: 90px;
 }
 
-/* === Footer === */
+/* ===== FOOTER ===== */
 .footer {
   margin-top: 120px;
   text-align: center;
@@ -857,7 +750,6 @@ body {
   font-size: 0.8rem;
 }
 
-/* === Responsif Mobile === */
 @media (max-width: 768px) {
   .business-card {
     flex-direction: column;
@@ -872,18 +764,10 @@ body {
   .business-image img {
     position: static;
     width: 300px;
-    margin-top: -20px; /* nempel pas di bawah card */
+    margin-top: -20px;
   }
 
   .footer {
-    margin-top: 60px; /* jaga jarak aman */
+    margin-top: 60px;
   }
 }
-
-
-
-
-
-
-   
-
