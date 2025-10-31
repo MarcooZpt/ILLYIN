@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const items = [
     {
-      icon: "./IMG/CalendarBlank.png",
+      icon: "./IMG/CalendarBlank (1).png",
       title: "Manage all your <br> bookings in one place.",
       desc: "With the option to view and manage your <br> staffs bookings too!",
       img: "./IMG/Frame 14604.png",
@@ -102,5 +102,6 @@ menuToggle.addEventListener("click", () => {
         });
       });
     });
+
 
 
