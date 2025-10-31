@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
       label: "Business Analytics"
     },
     {
-      icon: "./IMG/CalendarBlank.png",
+      icon: "./IMG/Wallet.png",
       title: "Easily withdraw your <br> balance income.",
       desc: "Receive payments quickly and securely <br> right from your dashboard.",
       img: "./IMG/Frame 14604 (2).png",
@@ -102,6 +102,7 @@ menuToggle.addEventListener("click", () => {
         });
       });
     });
+
 
 
 
