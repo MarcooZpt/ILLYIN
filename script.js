@@ -1,28 +1,28 @@
 document.addEventListener("DOMContentLoaded", () => {
   const items = [
     {
-      icon: "CalendarBlank (1).png",
+      icon: "./IMG/Calander.png",
       title: "Manage all your <br> bookings in one place.",
       desc: "With the option to view and manage your <br> staffs bookings too!",
       img: "./IMG/Frame 14604.png",
       label: "Manage Bookings"
     },
     {
-      icon: "Rows.png",
+      icon: "./IMG/Rows.png",
       title: "Organise all of your <br> services easily.",
       desc: "Make adjustments to your services anytime and <br> allow your customers to make bookings 24/7.",
       img: "./IMG/Frame 146044.png",
       label: "Organise Services"
     },
     {
-      icon: "ChartBar.png",
+      icon: "./IMG/ChartBar.png",
       title: "Get up to date analytic <br> on your business.",
       desc: "See upcoming bookings, cashflow <br> summaries + more...",
       img: "./IMG/Frame 14604 (1).png",
       label: "Business Analytics"
     },
     {
-      icon: "CalendarBlank.png",
+      icon: "./IMG/CalendarBlank.png",
       title: "Easily withdraw your <br> balance income.",
       desc: "Receive payments quickly and securely <br> right from your dashboard.",
       img: "./IMG/Frame 14604 (2).png",
@@ -102,3 +102,4 @@ menuToggle.addEventListener("click", () => {
         });
       });
     });
+
