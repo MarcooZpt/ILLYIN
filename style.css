@@ -744,6 +744,33 @@ body {
 .footer-links {
   margin-top: 25px;
 }
+@media (max-width: 768px) {
+
+  /* Pastikan container gambar jadi full & center */
+  .image-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Gambar auto kecil + center */
+  .image-box img {
+    width: 100%;
+    max-width: 300px; /* ukuran aman mobile */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+}
+
+
+
+
+
+
+
 
 .footer-links a {
   color: #666;
@@ -772,4 +799,5 @@ body {
     display: block !important;
   }
 }
+
 
