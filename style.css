@@ -762,31 +762,14 @@ body {
   font-size: 0.8rem;
 }
 @media (max-width: 768px) {
-  .business-card {
-    flex-direction: column;
-    text-align: center;
-    padding: 40px 25px;
-  }
-
-  .business-text {
-    text-align: center;
-  }
-
-  .business-image {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
+  .image-box img,
+  .marketplace-image img,
   .business-image img {
-    position: static;     /* Hapus absolute */
-    width: 70%;           /* Auto kecil */
-    max-width: 250px;     /* Biar gak kegedean */
-    height: auto;
-    margin: 0 auto;       /* Center */
-    display: block;
+    width: 100% !important;    /* Selalu sesuaikan layar */
+    max-width: 350px !important; /* Biar gak kegedean */
+    height: auto !important;
+    margin: 0 auto !important;   /* Center */
+    display: block !important;
   }
 }
-
-
 
