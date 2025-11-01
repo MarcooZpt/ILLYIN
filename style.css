@@ -771,3 +771,30 @@ body {
     margin-top: 60px;
   }
 }
+@media (max-width: 768px) {
+  .business-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 25px;
+  }
+
+  .business-text {
+    text-align: center;
+  }
+
+  .business-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .business-image img {
+    position: static; /* Hilangkan posisi absolute */
+    width: 80%;       /* Perkecil gambar agar tidak kepotong */
+    max-width: 260px; /* Batas maksimal */
+    margin: 0 auto;
+  }
+}
+
+
