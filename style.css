@@ -749,28 +749,6 @@ body {
   color: #888;
   font-size: 0.8rem;
 }
-
-@media (max-width: 768px) {
-  .business-card {
-    flex-direction: column;
-    text-align: center;
-    padding: 40px 25px 0;
-  }
-
-  .business-text {
-    text-align: center;
-  }
-
-  .business-image img {
-    position: static;
-    width: 300px;
-    margin-top: -20px;
-  }
-
-  .footer {
-    margin-top: 60px;
-  }
-}
 @media (max-width: 768px) {
   .business-card {
     flex-direction: column;
@@ -786,14 +764,15 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
   }
 
   .business-image img {
-    position: static; /* Hilangkan posisi absolute */
-    width: 80%;       /* Perkecil gambar agar tidak kepotong */
-    max-width: 260px; /* Batas maksimal */
-    margin: 0 auto;
+    position: static;     /* Hapus absolute */
+    width: 70%;           /* Auto kecil */
+    max-width: 250px;     /* Biar gak kegedean */
+    height: auto;
+    margin: 0 auto;       /* Center */
+    display: block;
   }
 }
 
