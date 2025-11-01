@@ -665,6 +665,18 @@ body {
   color: white;
   text-align: left;
 }
+@media (max-width: 768px) {
+  .image-box img,
+  .marketplace-image img,
+  .business-image img {
+    width: 100% !important;    /* Selalu sesuaikan layar */
+    max-width: 350px !important; /* Biar gak kegedean */
+    height: auto !important;
+    margin: 0 auto !important;   /* Center */
+    display: block !important;
+  }
+}
+
 
 .business-text h2 {
   font-size: 2.5rem;
@@ -775,5 +787,6 @@ body {
     display: block;
   }
 }
+
 
 
